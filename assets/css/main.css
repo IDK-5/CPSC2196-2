@@ -24,7 +24,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
+	
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -113,6 +113,7 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 		color: #FFD300;
 		text-decoration: none;
+		cursor: pointer;
 	}
 
 		a:hover {
@@ -120,7 +121,7 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
-	strong, b {FDD300
+	strong, b {
 		color: #ffffff;
 		font-weight: 300;
 	}
@@ -190,7 +191,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 4em 0;
+			margin: 0;
 		}
 
 	blockquote {
@@ -234,6 +235,74 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+	.team-content-wrapper {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+		width: 100%;
+	}
+
+	.team-content {
+		width: 80%;
+		display: grid;
+		grid-gap: 0px;
+		justify-items: center;
+		grid-template-columns: 100%;
+		justify-content: center;
+	}
+
+	.report-img {
+		width: 90%;
+		max-width: 90%;
+	}
+
+	.report-img > img, .report-video > iframe {
+		border-radius: 5px;
+		min-width: 100%;
+	}
+
+	.team-content > div {
+		margin: 0;
+	}
+
+	.team-content > div > p, .team-content > div > ol > li > p{
+		text-align: justify;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	.references-wrapper {
+		width: 100%;
+		padding-top: 30px;
+		border-top: 1px solid #FFD300;
+	}
+	.references {
+		display: grid;
+		justify-items: center;
+		width: 100%;
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	.report-buttons-wrapper {
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		
+	}
+
+	.report-btn {
+		min-width: 25%;
+	}
+
+	.hide {
+		display: hide !important;
+	}
+
 
 /* Loader */
 
